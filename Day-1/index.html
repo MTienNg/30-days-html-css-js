@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Product-card</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__heart">
+            <i class='bx bx-heart' style='color:#ffffff'></i>
+        </div>
+        <div class="card__cart">
+            <i class='bx bx-cart' style='color:#ffffff'></i>
+        </div>
+        <div class="card__img">
+            <img src="air-jordan-i-blue.png" alt="">
+        </div>
+        <div class="card__tittle">
+            Air Jordan I High G
+        </div>
+        <div class="card__price">
+            $200
+        </div>
+        <div class="card__size">
+            <h3>Size: </h3>
+            <span>40</span>
+            <span>41</span>
+            <span>42</span>
+            <span>43</span>
+        </div>
+        <div class="card__color">
+            <h3>Color: </h3>
+            <span data-img="air-jordan-i-blue.png" class="card__color--blue"></span>
+            <span data-img="air-jordan-i-yellow.png" class="card__color--yellow"></span>
+            <span data-img="air-jordan-i-black.png" class="card__color--black"></span>
+        </div>
+        <div class="card__action">
+            <button>Buy Now</button>
+            <button>Add Cart</button>
+        </div>
+    </div>
+    <script>
+        const thumb = document.querySelector(".card__img img");
+        const listColor = document.querySelectorAll(".card__color span");
+        listColor.forEach((element) => {
+            element.addEventListener("click", function () {
+                thumb.src = element.getAttribute("data-img");
+            })
+        });
+    </script>
+</body>
+
+</html>
