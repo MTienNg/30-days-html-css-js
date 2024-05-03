@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <title>Profile</title>
+</head>
+
+<body>
+    <div class="card">
+        <div class="card__img">
+            <img src="Minh_Tien.jpg" alt="">
+        </div>
+        <h2>
+            Minh Tien
+        </h2>
+        <P>Pentester</P>
+        <div class="card__social">
+            <a target="_black" href="https://www.facebook.com/lzmthine">
+                <i class='bx bxl-facebook-circle'></i>
+            </a>
+
+            <a target="_black" href="https://www.instagram.com/lz._.mthine/">
+                <i class='bx bxl-instagram'></i>
+            </a>
+
+            <a target="_black" href="https://www.linkedin.com/in/minh-tien-2a0934286/">
+                <i class='bx bxl-linkedin'></i>
+            </a>
+
+            <a target="_black" href="https://github.com/MTienNg">
+                <i class='bx bxl-github'></i>
+            </a>
+        </div>
+        <button class="Card__contact">Contact me</button>
+        <button id="about-me-button" class="Card__about">About me</button>
+
+    </div>
+
+    <script>
+        // Lấy element button
+        const aboutMeButton = document.getElementById("about-me-button");
+
+        // Thêm sự kiện click vào button
+        aboutMeButton.addEventListener("click", function () {
+            // Chuyển hướng đến trang about.html
+            window.location.href = "about.html";
+        });
+    </script>
+
+
+</body>
+
+</html>
