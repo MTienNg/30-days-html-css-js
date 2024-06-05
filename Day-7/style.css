@@ -1,0 +1,68 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #80cc84;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.wrapper {
+    background: white;
+    border-radius: 10px;
+    width: 400px;
+    padding: 20px;
+}
+
+.title {
+    font-size: 20px;
+}
+
+.content {
+    border: 1px solid #888;
+    padding: 10px;
+    display: flex;
+    margin-top: 20px;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    /*wrap, các mục con sẽ tự động xuống dòng 
+                        nếu không còn đủ không gian trên một dòng để chứa chúng.*/
+}
+
+.content li {
+    background: green;
+    color: white;
+    margin: 5px 5px;
+    list-style: none;
+    /*Xoa dau dong li*/
+    padding: 10px;
+}
+
+.content li i {
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.content input {
+    border: none;
+    outline: none;
+    font-size: 20px;
+    margin: 10px;
+    flex: 2;
+}
+
+.remove-all {
+    border: none;
+    outline: none;
+    background: #80cc84;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin-top: 10px;
+    cursor: pointer;
+}

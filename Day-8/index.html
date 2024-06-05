@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Login Form</title>
+</head>
+<body>
+    <div class="container">
+        <!-- upper button section to select
+             the login or signup form -->
+             <div class="slider"></div>
+             <div class="btn">
+                 <button class="login">Login</button>
+                 <button class="signup">Signup</button>
+             </div>
+
+
+        <div class="form-section">
+            
+            <form action="" class="login">
+                <!-- login form -->
+                <div class="login-box">
+                    <div class="form-control">
+                        <input type="text" class="name ele"  id="usernameLogin" placeholder="Enter your username">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    
+                    <div class="form-control">
+                        <input type="password"  class="password ele" id="passwordLogin" placeholder="Password">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="Login" />
+                </div>
+            </form>
+
+            <form action="" class="Signup">
+                <!-- Signup form -->
+                <div class="signup-box">
+                    <div class="form-control">
+                        <input type="text" class="name ele"  id="usernameSignup" placeholder="Enter your username">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="email" class="email ele"  id="emailSignup" placeholder="youremail@email.com">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password"  class="password ele" id="passwordSignup" placeholder="Password">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    <div class="form-control">
+                        <input type="password" class="password ele"  id="password2Signup" placeholder="Confirm Password">
+                        <span></span>
+                        <small></small>
+                    </div>
+                    <input type="submit" value="Signup" />
+                </div>
+            </form>
+            
+        </div>
+        
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
